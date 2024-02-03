@@ -1,3 +1,4 @@
+import ThemeSwitcher from "../themeSwitcher";
 import "./style.css";
 
 const Header = () => {
@@ -12,6 +13,7 @@ const Header = () => {
           <li>Contact</li>
         </ul>
       </nav>
+      <ThemeSwitcher />
     </header>
   );
 };

@@ -1,0 +1,13 @@
+.theme-switcher {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-size: 1em;
+  margin: 10px;
+}
+.theme-switcher:focus {
+  outline: none;
+}/*# sourceMappingURL=style.css.map */
