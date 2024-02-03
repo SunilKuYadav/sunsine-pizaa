@@ -1,0 +1,39 @@
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px; // Set a fixed width or make it responsive
+  margin: auto;
+
+  .image {
+    border-radius: 50%;
+    width: 120px; // Adjust size as needed
+    height: 120px; // Adjust size as needed
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+
+  .typeLabel {
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+
+  .price {
+    font-weight: bold;
+    color: #ff4500;
+    margin-top: 10px;
+  }
+}
