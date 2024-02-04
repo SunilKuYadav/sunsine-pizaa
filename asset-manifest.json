@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/sunsine-pizaa/static/css/main.09f4616b.css",
+    "main.js": "/sunsine-pizaa/static/js/main.97d2112c.js",
+    "static/js/592.2b6a9ba5.chunk.js": "/sunsine-pizaa/static/js/592.2b6a9ba5.chunk.js",
+    "static/media/tp-logo-bg.png": "/sunsine-pizaa/static/media/tp-logo-bg.0ac367e258153c3c4233.png",
+    "static/media/logo-bg.png": "/sunsine-pizaa/static/media/logo-bg.63ab2ee1114d3c310ea3.png",
+    "static/media/logo.webp": "/sunsine-pizaa/static/media/logo.5d10263e33cbebe8f7c5.webp",
+    "index.html": "/sunsine-pizaa/index.html",
+    "main.09f4616b.css.map": "/sunsine-pizaa/static/css/main.09f4616b.css.map",
+    "main.97d2112c.js.map": "/sunsine-pizaa/static/js/main.97d2112c.js.map",
+    "592.2b6a9ba5.chunk.js.map": "/sunsine-pizaa/static/js/592.2b6a9ba5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09f4616b.css",
+    "static/js/main.97d2112c.js"
+  ]
+}
