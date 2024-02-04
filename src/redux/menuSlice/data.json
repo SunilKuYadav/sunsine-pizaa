@@ -1,0 +1,148 @@
+{
+  "menuItem": [
+    {
+      "id": "pizza-margherita",
+      "name": "Margherita Pizza",
+      "description": "Classic delight with 100% real mozzarella cheese",
+      "prices": {
+        "regular": 90,
+        "medium": 130
+      },
+      "offer": false,
+      "imageSrc": "https://placehold.co/300x225",
+      "typeLabel": "PIZZA"
+    },
+    {
+      "id": "pizza-double-cheeza-margherita",
+      "name": "Double Cheeza Margherita",
+      "description": "Double the cheese, double the delight",
+      "prices": {
+        "regular": 110,
+        "medium": 150
+      },
+      "offer": false,
+      "imageSrc": "https://placehold.co/300x225",
+      "typeLabel": "PIZZA"
+    },
+    {
+      "id": "pizza-onion",
+      "name": "Onion Pizza",
+      "description": "A simple yet delicious onion-topped pizza",
+      "prices": {
+        "regular": 99,
+        "medium": 130
+      },
+      "offer": false,
+      "imageSrc": "https://placehold.co/300x225",
+      "typeLabel": "PIZZA"
+    },
+    {
+      "id": "pizza-fresh-veggie",
+      "name": "Fresh Veggie",
+      "description": "A medley of fresh garden vegetables on a pizza",
+      "prices": {
+        "regular": 99,
+        "medium": 140
+      },
+      "offer": false,
+      "imageSrc": "https://placehold.co/300x225",
+      "typeLabel": "PIZZA"
+    },
+    {
+      "id": "pizza-cheeze-corn",
+      "name": "Cheeze & Corn",
+      "description": "Sweet corn with a generous topping of melted cheese",
+      "prices": {
+        "regular": 130,
+        "medium": 160
+      },
+      "offer": true,
+      "offerConfig": {
+        "percentage": 10,
+        "offerType": "medium"
+      },
+      "imageSrc": "https://placehold.co/300x225",
+      "typeLabel": "PIZZA"
+    },
+    {
+      "id": "pizza-peppy-paneer",
+      "name": "Peppy Paneer",
+      "description": "Spiced paneer with capsicum, fiery red, crisp capsicum and spicy red pepper",
+      "prices": {
+        "regular": 140,
+        "medium": 180
+      },
+      "offer": false,
+      "imageSrc": "https://placehold.co/300x225",
+      "typeLabel": "PIZZA"
+    },
+    {
+      "id": "pizza-cheeze-veg",
+      "name": "Cheeze Vegetable Pizza",
+      "description": "Loaded with crunchy bell peppers, onions, and a hearty amount of cheese",
+      "prices": {
+        "regular": 150,
+        "medium": 180
+      },
+      "offer": false,
+      "imageSrc": "https://placehold.co/300x225",
+      "typeLabel": "PIZZA"
+    },
+    {
+      "id": "pizza-paneer-tikka",
+      "name": "Paneer Tikka Pizza",
+      "description": "Marinated paneer chunks with fresh veggies and a tangy sauce",
+      "prices": {
+        "regular": 140,
+        "medium": 180
+      },
+      "offer": false,
+      "imageSrc": "https://placehold.co/300x225",
+      "typeLabel": "PIZZA"
+    },
+    {
+      "id": "pizza-veg-extra-vaganza",
+      "name": "Veg Extra Vaganza",
+      "description": "The awesome foursome! Golden corn, black olives, capsicum, red paprika",
+      "prices": {
+        "regular": 150,
+        "medium": 180
+      },
+      "offer": false,
+      "imageSrc": "https://placehold.co/300x225",
+      "typeLabel": "PIZZA"
+    },
+    {
+      "id": "pizza-cheeze-burst",
+      "name": "Cheeze Burst Pizza",
+      "description": "Cheese lovers' delight with extra cheese oozing in every bite",
+      "prices": {
+        "regular": 140,
+        "medium": 180
+      },
+      "offer": true,
+      "offerConfig": {
+        "percentage": 10,
+        "offerType": "medium"
+      },
+      "imageSrc": "https://placehold.co/300x225",
+      "typeLabel": "PIZZA"
+    },
+    {
+      "id": "pizza-tandoori-paneer",
+      "name": "Indian Tandoory Paneer Pizza",
+      "description": "Spiced paneer, onion, green capsicum, and red paprika in a tandoori sauce",
+      "prices": {
+        "regular": 150,
+        "medium": 190
+      },
+      "offer": true,
+      "offerConfig": {
+        "percentage": 10,
+        "offerType": "medium"
+      },
+      "imageSrc": "https://placehold.co/300x225",
+      "typeLabel": "PIZZA"
+    }
+  ]
+}

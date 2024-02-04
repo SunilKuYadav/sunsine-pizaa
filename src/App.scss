@@ -15,7 +15,6 @@
   --text-color: #fafafa; /* Light Gray */
   --accent-color: #cddc39; /* Lime */
 }
-
 *,
 ::after,
 ::before {
@@ -23,8 +22,8 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Caveat", cursive;
+  // font-family: 'Dancing Script', cursive;
 }
-
 .App {
   display: flex;
   flex-direction: column;
@@ -32,9 +31,9 @@
   justify-items: center;
   overflow: hidden;
   background-color: var(--background-color);
+  .container {
+    min-width: 360px;
+    max-width: 768px;
+    overflow: hidden;
+  }
 }
-.App .container {
-  min-width: 360px;
-  max-width: 768px;
-  overflow: hidden;
-}/*# sourceMappingURL=App.css.map */
