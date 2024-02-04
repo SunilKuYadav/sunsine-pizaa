@@ -1,28 +1,71 @@
 import React from "react";
 import "./style.css";
+import CartItem from "../cartItem";
 
-interface MenuCardProps {
-  name: string;
-  description: string;
-  price: number;
-  imageSrc: string;
-  typeLabel: string; // e.g., "PIZZA" or "CALZONE"
+interface OfferConfig {
+  percentage: number;
+  offerType: string; // could be more specific, e.g., 'regular' | 'medium'
 }
 
-const MenuCard: React.FC<MenuCardProps> = ({
+interface Prices {
+  regular: number;
+  medium: number;
+}
+
+interface MenuCardProps {
+  id: string;
+  name: string;
+  description: string;
+  prices: Prices;
+  offer: boolean;
+  offerConfig?: OfferConfig;
+  imageSrc: string;
+  typeLabel: string;
+}
+
+enum PIZZA_SIZE {
+  REGULAR = "REGULAR",
+  MEDIUM = "MEDIUM",
+  LARGE = "LARGE",
+}
+
+const MenuCard = ({
   name,
   description,
-  price,
+  prices,
+  offer,
+  offerConfig,
   imageSrc,
   typeLabel,
-}) => {
+}: MenuCardProps) => {
+  let savePercentage = 0;
+  let originalPrice = 0;
+
+  if (offer) {
+    savePercentage = offerConfig?.percentage as number;
+  }
+  if (typeLabel === "PIZZA") {
+    const key = offerConfig?.offerType as "regular" | "medium";
+    originalPrice = prices[key];
+  }
+  const discountedPrice = 49.89;
+
   return (
-    <div className="card">
-      <img src={imageSrc} alt={name} className="image" />
-      <h3 className="name">{name}</h3>
-      <p className="description">{description}</p>
-      <p className="typeLabel">{typeLabel}</p>
-      <p className="price">€{price.toFixed(2)}</p>
+    <div className={`card`}>
+      <div>
+        <img src={imageSrc} alt={name} className="image" />
+      </div>
+      <div>
+        <h3 className="name">{name}</h3>
+        <hr className="nameLine" />
+        <p className="typeLabel">{typeLabel}</p>
+        <p className="description">{description}</p>
+      </div>
+      <CartItem
+        savePercentage={savePercentage}
+        originalPrice={originalPrice}
+        discountedPrice={discountedPrice}
+      />
     </div>
   );
 };

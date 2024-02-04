@@ -1,42 +1,12 @@
 import React, { useState } from "react";
 import "./style.css";
-import MenuCarousel from "../menuCarousel";
+import { MenuCarousel } from "../menuCarousel";
+import { useAppSelector } from "../../redux";
 
-const pizzas = [
-  {
-    name: "Margherita",
-    description: "Classic delight with 100% real mozzarella cheese",
-    price: 8.99,
-  },
-  {
-    name: "Pepperoni",
-    description: "Loaded with pepperoni and cheese",
-    price: 9.99,
-  },
-  {
-    name: "Veggie Supreme",
-    description: "Garden fresh veggies and 100% real mozzarella",
-    price: 10.99,
-  },
-  // Add more pizzas here
-];
 const categories = ["All", "Pizza", "Desserts"]; // Example categories
-const menuItems = [
-  {
-    imageSrc: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
-    name: "Daisy",
-    description: "Pomodoro and mozzarella",
-    price: 4.5,
-  },
-  {
-    imageSrc: "https://images.unsplash.com/photo-1572448862527-d3c904757de6",
-    name: "HOAX",
-    description: "Tomato, buffalo mozzarella",
-    price: 6.5,
-  },
-  // Add more items here
-];
+
 const Menu = () => {
+  const menuItems = useAppSelector((state) => state.menuReducer.menu);
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
   const handleCategoryChange = (category: string) => {
@@ -49,6 +19,7 @@ const Menu = () => {
       <MenuCarousel />
       <section className="menu-section">
         <h2 className="menu-section-title">Our Food Menu</h2>
+        <hr className="nameLine" />
         <p className="menu-section-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
@@ -80,20 +51,12 @@ const Menu = () => {
               <p className="menu-item-description">{item.description}</p>
             </div>
             <div className="menu-item-price">
-              <span>€{item.price.toFixed(2)}</span>
+              <p className="price">€{item?.prices?.regular.toFixed(2)}</p>
+              <button className="view">Order</button>
             </div>
           </div>
         ))}
       </div>
-      {/* <ul className="pizzaList">
-        {pizzas.map((pizza, index) => (
-          <li key={index} className="pizzaItem">
-            <h3>{pizza.name}</h3>
-            <p>{pizza.description}</p>
-            <p>${pizza.price.toFixed(2)}</p>
-          </li>
-        ))}
-      </ul> */}
     </div>
   );
 };

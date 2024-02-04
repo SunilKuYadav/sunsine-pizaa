@@ -8,11 +8,7 @@ module.exports = {
     project: "./tsconfig.json", // Specify the path to your tsconfig.json file (use './' to indicate the current directory)
   },
   plugins: ["@typescript-eslint", "import"],
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "@react-native",
-  ],
+  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
   rules: {
     "@typescript-eslint/naming-convention": [
       "error",

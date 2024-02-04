@@ -5,11 +5,13 @@ import { Footer, Header, Menu } from "./components";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <main>
-        <Menu />
-      </main>
-      <Footer />
+      <div className="container">
+        <Header />
+        <main>
+          <Menu />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

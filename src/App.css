@@ -1,21 +1,40 @@
 /* Light Theme */
 :root {
-  --primary-color: #E53935; /* Tomato Red */
-  --secondary-color: #FFC107; /* Cheese Yellow */
-  --background-color: #FFF9C4; /* Off-White */
+  --primary-color: #e53935; /* Tomato Red */
+  --secondary-color: #ffc107; /* Cheese Yellow */
+  --background-color: #fff9c4; /* Off-White */
   --text-color: #333333; /* Dark Gray */
-  --accent-color: #4CAF50; /* Basil Green */
+  --accent-color: #4caf50; /* Basil Green */
 }
 
 /* Dark Theme */
 .dark-theme {
-  --primary-color: #D32F2F; /* Brick Red */
-  --secondary-color: #FFA000; /* Mustard Yellow */
+  --primary-color: #d32f2f; /* Brick Red */
+  --secondary-color: #ffa000; /* Mustard Yellow */
   --background-color: #212121; /* Charcoal */
-  --text-color: #FAFAFA; /* Light Gray */
-  --accent-color: #CDDC39; /* Lime */
+  --text-color: #fafafa; /* Light Gray */
+  --accent-color: #cddc39; /* Lime */
 }
 
-body {
-  background-color: var(--accent-color);
+*,
+::after,
+::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+  background-color: var(--background-color);
+}
+.App .container {
+  min-width: 360px;
+  max-width: 768px;
+  overflow: hidden;
 }/*# sourceMappingURL=App.css.map */
